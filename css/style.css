@@ -11,7 +11,8 @@ body {
 .content-header {
     background: url('../img/jumbo.png');
     background-size: cover;
-    height: 800px;
+    height: 700px;
+    position: relative;
 }
 
 .centered {
@@ -27,9 +28,6 @@ header>nav>* {
 }
 
 header {
-    background: url('../img/jumbo.png');
-    background-size: cover;
-    height: 800px;
     text-align: center;
     padding-top: 15px;
 }
@@ -63,11 +61,41 @@ header li a {
     font-weight: bold;
 }
 
-header button {
+button {
     border: none;
-    border-radius: 2.5rem;
-    height: 2rem;
-    width: 5rem;
+    border-radius: 20px;
+    padding: 10px 20px;
     font-weight: bold;
 }
 
+.jumbo {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: white;
+}
+
+.jumbo h1 {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.jumbo p {
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.jumbo button:first-of-type span {
+    transform:rotate(90deg);
+    display: inline-block;
+}
+
+.jumbo button:last-of-type {
+    background-color: black;
+    color: white;
+}
