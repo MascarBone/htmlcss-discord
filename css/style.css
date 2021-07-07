@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .content-header {
@@ -29,6 +29,12 @@ body {
     float: right;
 }
 
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 header>nav>* {
     display: inline-block;
     height: 50px;
@@ -36,6 +42,7 @@ header>nav>* {
 }
 
 header {
+    font-size: 20px;
     text-align: center;
     padding-top: 15px;
 }
@@ -71,13 +78,15 @@ header li a {
 
 button {
     border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 22px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .jumbo {
-    width: 800px;
+    width: 1000px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -87,13 +96,13 @@ button {
 }
 
 .jumbo h1 {
-    font-size: 3em;
+    font-size: 4.5em;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 .jumbo p {
-    font-size: 1.2em;
+    font-size: 1.8em;
     line-height: 1.3em;
     margin-bottom: 25px;
 }
@@ -107,21 +116,15 @@ button .arrow {
     background-color: black;
     color: white;
 }
-
+ 
 .content img {
-    padding: 100px 80px;
+    width: 50%;
+    padding: 100px 40px 50px
 }
 
 .content .text-content {
-    padding: 130px 80px 100px;
-}
-
-.content .leftside {
-    clear: left;
-}
-
-.content .rightside {
-    clear: right;
+    width: 50%;
+    padding: 130px 80px 50px;
 }
 
 .content h2{
