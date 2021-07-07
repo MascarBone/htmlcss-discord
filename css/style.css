@@ -21,6 +21,14 @@ body {
     max-width: 1400px;
 }
 
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
 header>nav>* {
     display: inline-block;
     height: 50px;
@@ -90,7 +98,7 @@ button {
     margin-bottom: 25px;
 }
 
-.jumbo button:first-of-type span {
+button .arrow {
     transform:rotate(90deg);
     display: inline-block;
 }
@@ -100,19 +108,40 @@ button {
     color: white;
 }
 
-#first-content img {
-    float: left;
+.content img {
     padding: 100px 80px;
 }
 
-#first-content .text-content {
+.content .text-content {
     padding: 130px 80px 100px;
 }
 
-#first-content .text-content h2{
+.content .leftside {
+    clear: left;
+}
+
+.content .rightside {
+    clear: right;
+}
+
+.content h2{
     font-size: 3em;
 }
 
-#first-content .text-content p{
+.content p{
     font-size: 1.5em;
+}
+
+.content-bottom {
+    text-align: center;
+}
+
+.content-bottom h3{
+    background-image: url('../img/stars.svg');
+    padding-bottom: 20px;
+}
+
+.content-bottom button {
+    background-color: rgb(142, 161, 225);
+    color: white;
 }
