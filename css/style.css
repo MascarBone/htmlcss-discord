@@ -8,6 +8,14 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+ul {
+    list-style: none;
+}
+
+hr {
+    margin: 20px 0;
+}
+
 .content-header {
     background: url('../img/jumbo.png');
     background-size: cover;
@@ -18,7 +26,7 @@ body {
 .centered {
     margin: 0 auto;
     min-width: 800px;
-    max-width: 1400px;
+    max-width: 1200px;
 }
 
 .fl {
@@ -35,6 +43,11 @@ body {
     clear: both;
 }
 
+.arrow {
+    transform:rotate(90deg);
+    display: inline-block;
+}
+
 header>nav>* {
     display: inline-block;
     height: 50px;
@@ -47,8 +60,7 @@ header {
     padding-top: 15px;
 }
 
-header .logo {
-    float: left;
+.logo {
     margin-left: 20px;
 }
 
@@ -56,12 +68,7 @@ header .logo img{
     vertical-align: middle;
 }
 
-header ul {
-    list-style: none;
-}
-
-header .login {
-    float: right;
+.login {
     margin-right: 20px;
 }
 
@@ -107,39 +114,34 @@ button {
     margin-bottom: 25px;
 }
 
-button .arrow {
-    transform:rotate(90deg);
-    display: inline-block;
-}
-
 .jumbo button:last-of-type {
     background-color: black;
     color: white;
 }
  
-.content img {
+main .content img {
     width: 50%;
     padding: 100px 40px 50px
 }
 
-.content .text-content {
+main .content .text-content {
     width: 50%;
     padding: 130px 80px 50px;
 }
 
-.content h2{
+main .content h2{
     font-size: 3em;
 }
 
-.content p{
+main .content p{
     font-size: 1.5em;
 }
 
-.content-bottom {
+main .content-bottom {
     text-align: center;
 }
 
-.content-bottom h3{
+main .content-bottom h3{
     background-image: url('../img/stars.svg');
     background-size: contain;
     background-repeat: no-repeat;
@@ -147,7 +149,48 @@ button .arrow {
     padding-bottom: 20px;
 }
 
-.content-bottom button {
+footer {
+    background-color: rgb(19, 19, 20);
+    margin-top: 50px;
+    padding-top: 50px;
+    color: white;
+}
+
+footer,footer h6 {
+    font-size: 20px;
+}
+
+footer .list-pages h6,
+footer #footer-title h1
+{
+    color: rgb(93, 110, 167)
+}
+
+footer #footer-title img{
+    vertical-align: middle;
+}
+
+footer #footer-title div {
+    padding-top: 25px;
+}
+
+footer #footer-title li{
+    padding: 25px 20px 0 0;
+}
+
+footer .list-pages > ul{
+    margin-left: 25px;
+}
+
+footer .list-pages li > ul{
+    line-height: 25px;
+}
+
+footer .bottom-footer {
+    padding-bottom: 20px;
+}
+
+.button-violet {
     background-color: rgb(142, 161, 225);
     color: white;
 }
