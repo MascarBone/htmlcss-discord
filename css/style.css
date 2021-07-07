@@ -138,6 +138,9 @@ button .arrow {
 
 .content-bottom h3{
     background-image: url('../img/stars.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     padding-bottom: 20px;
 }
 
