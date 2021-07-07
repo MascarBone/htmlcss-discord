@@ -86,8 +86,8 @@ button {
 
 .jumbo p {
     font-size: 1.2em;
-    font-weight: 600;
-    margin-bottom: 10px;
+    line-height: 1.3em;
+    margin-bottom: 25px;
 }
 
 .jumbo button:first-of-type span {
@@ -98,4 +98,21 @@ button {
 .jumbo button:last-of-type {
     background-color: black;
     color: white;
+}
+
+#first-content img {
+    float: left;
+    padding: 100px 80px;
+}
+
+#first-content .text-content {
+    padding: 130px 80px 100px;
+}
+
+#first-content .text-content h2{
+    font-size: 3em;
+}
+
+#first-content .text-content p{
+    font-size: 1.5em;
 }
