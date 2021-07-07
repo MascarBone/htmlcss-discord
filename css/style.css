@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content-header {
+    background: url('../img/jumbo.png');
+    background-size: cover;
+    height: 800px;
+}
+
+.centered {
+    margin: 0 auto;
+    min-width: 800px;
+    max-width: 1400px;
+}
+
+header>nav>* {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+}
+
+header {
+    background: url('../img/jumbo.png');
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+header .logo {
+    float: left;
+    margin-left: 20px;
+}
+
+header .logo img{
+    vertical-align: middle;
+}
+
+header ul {
+    list-style: none;
+}
+
+header .login {
+    float: right;
+    margin-right: 20px;
+}
+
+header li {
+    float: left;
+    margin: 0 15px;
+}
+
+header li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+header button {
+    border: none;
+    border-radius: 2.5rem;
+    height: 2rem;
+    width: 5rem;
+    font-weight: bold;
+}
+
