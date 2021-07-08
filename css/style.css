@@ -12,21 +12,70 @@ ul {
     list-style: none;
 }
 
-hr {
-    margin: 20px 0;
+button {
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    padding: 0 22px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
-.content-header {
+span {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 4.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+h3 {
+    font-size: 2.5em;
+}
+h4 {
+   font-size: 2em; 
+}
+
+h5 {
+    font-size: 1.2em;
+}
+
+p {
+    font-size: 1.8em;
+    line-height: 1.3em;
+    margin-bottom: 25px;
+}
+
+header {
     background: url('../img/jumbo.png');
     background-size: cover;
     height: 700px;
+    font-size: 20px;
+    padding-top: 15px;
     position: relative;
+}
+
+footer {
+    background-color: rgb(35, 39, 42);
+    margin-top: 50px;
+    padding-top: 50px;
+    color: white;
 }
 
 .centered {
     margin: 0 auto;
     min-width: 800px;
     max-width: 1200px;
+}
+
+.text-centered{
+    text-align: center;
 }
 
 .fl {
@@ -48,51 +97,28 @@ hr {
     display: inline-block;
 }
 
-header>nav>* {
+.logo img {
+    vertical-align: middle;
+}
+
+.content-header > nav > * {
     display: inline-block;
     height: 50px;
     line-height: 50px;
 }
 
-header {
-    font-size: 20px;
-    text-align: center;
-    padding-top: 15px;
-}
-
-.logo {
-    margin-left: 20px;
-}
-
-header .logo img{
-    vertical-align: middle;
-}
-
-.login {
-    margin-right: 20px;
-}
-
-header li {
+.content-header ul li {
     float: left;
     margin: 0 15px;
 }
 
-header li a {
+.content-header li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
 
-button {
-    border: none;
-    border-radius: 25px;
-    height: 50px;
-    padding: 0 22px;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.jumbo {
+.content-header .jumbo {
     width: 1000px;
     position: absolute;
     top: 50%;
@@ -102,70 +128,56 @@ button {
     color: white;
 }
 
-.jumbo h1 {
-    font-size: 4.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+.content-header .jumbo button:first-of-type {
+    background-color: white;
+    color: black;
 }
 
-.jumbo p {
-    font-size: 1.8em;
-    line-height: 1.3em;
-    margin-bottom: 25px;
-}
-
-.jumbo button:last-of-type {
+.content-header .jumbo button:last-of-type {
     background-color: black;
     color: white;
 }
  
-main .content img {
+.content-main .row .column,.text-content{
     width: 50%;
-    padding: 100px 40px 50px
+}
+.content-main .row .column {
+    padding: 100px 40px 50px;
+}
+.content-main .row .text-content {
+    padding: 120px 80px 50px;
+}
+.content-main img{
+    width: 100%;
+}
+.content-main .row-end {
+    margin: 20px 0;
+}
+.content-main .row-end .text-content-end{
+    width: max-content;
+    margin: 0 auto;
 }
 
-main .content .text-content {
-    width: 50%;
-    padding: 130px 80px 50px;
-}
-
-main .content h2{
-    font-size: 3em;
-}
-
-main .content p{
-    font-size: 1.5em;
-}
-
-main .content-bottom {
-    text-align: center;
-}
-
-main .content-bottom h3{
+.content-main .row-end .text-content-end h4{
     background-image: url('../img/stars.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
-    padding-bottom: 20px;
+    padding: 20px 50px;
 }
 
-footer {
-    background-color: rgb(19, 19, 20);
-    margin-top: 50px;
-    padding-top: 50px;
-    color: white;
-}
-
-footer,footer h6 {
-    font-size: 20px;
-}
-
-footer .list-pages h6,
-footer #footer-title h1
-{
+.content-footer h3,h5 {
     color: rgb(93, 110, 167)
 }
 
+/*
+
+
+
+HERE
+
+
+
+*/
 footer #footer-title img{
     vertical-align: middle;
 }
@@ -186,11 +198,22 @@ footer .list-pages li > ul{
     line-height: 25px;
 }
 
-footer .bottom-footer {
+footer .content-footer{
     padding-bottom: 20px;
+}
+
+footer .bottom-footer {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bottom-footer > * {
+    height: 50px;
+    line-height: 50px;
 }
 
 .button-violet {
     background-color: rgb(142, 161, 225);
     color: white;
 }
+
